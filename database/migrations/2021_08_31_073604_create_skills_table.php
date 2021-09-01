@@ -15,19 +15,19 @@ class CreateSkillsTable extends Migration
     {
         Schema::create('skills', function (Blueprint $table) {
             $table->id();
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->string('skill1');
-            $table->integer('%skill1');
+            $table->integer('pourcent_skill1');
             $table->string('skill2');
-            $table->integer('%skill2');
+            $table->integer('pourcent_skill2');
             $table->string('skill3');
-            $table->integer('%skill3');
+            $table->integer('pourcent_skill3');
             $table->string('skill4');
-            $table->integer('%skill4');
+            $table->integer('pourcent_skill4');
             $table->string('skill5');
-            $table->integer('%skill5');
+            $table->integer('pourcent_skill5');
             $table->string('skill6');
-            $table->integer('%skill6');
+            $table->integer('pourcent_skill6');
             $table->timestamps();
         });
     }

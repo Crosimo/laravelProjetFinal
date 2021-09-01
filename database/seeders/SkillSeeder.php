@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use Facade\Ignition\Support\FakeComposer;
+use Faker\Factory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -15,19 +17,19 @@ class SkillSeeder extends Seeder
     public function run()
     {
         DB::table('skills')-> insert([
-            'description' => '',
+            'description' =>"",
             'skill1' => 'HTML',
-            '%skill1' => 100,
+            'pourcent_skill1' => 100,
             'skill2' => 'CSS',
-            '%skill2' => 90,
+            'pourcent_skill2' => 90,
             'skill3' => 'JavaScript',
-            '%skill3' => 75,
+            'pourcent_skill3' => 75,
             'skill4' => 'PHP',
-            '%skill4' => 80,
+            'pourcent_skill4' => 80,
             'skill5' => 'WordPress/CMS',
-            '%skill5' => 90,
+            'pourcent_skill5' => 90,
             'skill6' => 'Photoshop',
-            '%skill6' => 55,
+            'pourcent_skill6' => 55,
         ]);
     }
 }

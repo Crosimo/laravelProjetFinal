@@ -15,11 +15,8 @@
 
             <nav class="nav-menu">
                 <ul>
-                    <li class="active"><a href="/"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-                    <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-                    <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
-                    <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+                    <li class="active"><a href="{{route('back')}}"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                  
                     <br>
                     <li><a href="/"><i class="bx bx-arrow-back"></i> <span>Front</span></a></li>
                 </ul>
